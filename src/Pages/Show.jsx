@@ -6,7 +6,7 @@ const Show = () => {
   const [isLoading, setisLoading] = useState(true);
   const [error, setError] = useState('')
 
-  let spinner =  
+   
 
   useEffect(() => {
     setTimeout(() => {

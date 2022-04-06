@@ -11,13 +11,15 @@ import Show from './Pages/Show';
 import Signoff from './Pages/Signoff';
 import CounterContextProvider from './Context/CounterContext';
 import Morepages from './Pages/Morepages';
+import ShowContextProvider from './Context/ShowContext';
+
 
 function App() {
 
  
 
   return (
-   <>
+   <CounterContextProvider>
    <Router>
    <Navbar/>
    <Routes>
@@ -32,7 +34,7 @@ function App() {
    </Routes>
    </Router>
       
-   </>
+   </CounterContextProvider>
   );
 }
 
